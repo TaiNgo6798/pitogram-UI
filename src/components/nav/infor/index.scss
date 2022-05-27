@@ -1,0 +1,10 @@
+.infor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .25em;
+  border-radius: 10px;
+  >p {
+    margin: 0 10px !important;
+  }
+}

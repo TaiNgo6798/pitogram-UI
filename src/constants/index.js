@@ -1,0 +1,3 @@
+const CHAT_SKIP_STEP = 50
+
+export {CHAT_SKIP_STEP}

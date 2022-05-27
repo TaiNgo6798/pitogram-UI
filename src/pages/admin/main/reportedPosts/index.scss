@@ -1,0 +1,15 @@
+.img_row{
+  &:hover{
+    cursor: pointer;
+  }
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+}
+.iframe{
+  width: 100%;
+}
+.detailModal{
+  width: 1200px;
+  height: 200px;
+}

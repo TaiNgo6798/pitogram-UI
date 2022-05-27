@@ -1,0 +1,47 @@
+.img_row{
+  &:hover{
+    cursor: pointer;
+  }
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+}
+
+
+.posts-card{
+  width: 100%;
+  overflow: auto;
+  height: calc(100% - 60px);
+  .posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(22em, 1fr));
+
+    .postForm{
+
+      &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+      }
+
+      transition: all 200ms ease-out;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5em;
+
+      padding-bottom: 1em;
+
+      max-height: 26em;
+      min-height: 26em;
+
+      max-width: 16em;
+      min-width: 16em;
+
+    }
+  }
+
+}

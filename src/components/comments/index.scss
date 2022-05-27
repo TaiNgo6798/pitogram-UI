@@ -1,0 +1,192 @@
+.comments {
+  margin-top: 0.85em;
+  height: 100%;
+  max-height: 100%;
+  margin-bottom: 5em;
+
+  .typing_comment {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 0.5em 0.5em;
+    > p {
+      color: #9a9a9a9a;
+      font-size: small;
+    }
+    > img {
+      margin-left: 0.2em;
+      height: 5%;
+      width: 4%;
+    }
+  }
+  p {
+    margin: 0;
+  }
+
+  .child_comments {
+    margin-left: 3em;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #childComment {
+      width: 130%;
+    }
+  }
+  .A_comment {
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+    height: auto;
+    .seeMore {
+      margin-top: 0.5em;
+      margin-left: 3em;
+      .more-comments {
+        color: gray;
+      }
+    }
+    .comment-body {
+      display: flex;
+      align-items: flex-start;
+      #emojiedit {
+        position: absolute;
+        right: 1rem;
+        bottom: 0.5rem;
+      }
+      #editpicker {
+        position: absolute;
+        right: -15%;
+        margin-top: 2%;
+      }
+      .ant-comment {
+        width: fit-content;
+        margin-right: 0.2em;
+        .ant-comment-inner {
+          padding: 0;
+          .ant-comment-avatar {
+            margin-right: 0.5em;
+            > .child-comment_avatar {
+              > * {
+                height: 26px;
+                width: 26px;
+              }
+            }
+          }
+        }
+        .ant-comment-content {
+          padding: 0 0.5em 0 0.5em;
+          border-radius: 22px;
+          display: flex;
+          align-items: center;
+          .ant-comment-content-detail {
+            > .name-and-time {
+              display: flex;
+              align-items: center;
+              > a {
+                color: rgb(67, 69, 72);
+                font-weight: 700;
+              }
+              > .time {
+                &:hover {
+                  cursor: pointer;
+                  text-decoration: underline;
+                }
+                font-size: smaller;
+                opacity: 0.75;
+                user-select: none;
+                margin-left: 0.5em;
+              }
+            }
+            > .content {
+              position: relative;
+              > p {
+                word-break: break-word;
+              }
+            }
+          }
+          .ant-comment-content-author {
+            display: none;
+          }
+        }
+      }
+      .like-count {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        margin-left: auto;
+        .icon_reacted {
+          width: 1em;
+          height: 1em;
+          margin-right: 0.2em;
+          margin-left: -0.5em;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .like-countt {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        margin-left: auto;
+        .icon_reacted {
+          width: 1em;
+          height: 1em;
+          margin-right: 0.2em;
+          margin-left: -0.5em;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    > .AComment_footer {
+      display: flex;
+      width: 100%;
+      margin-top: 0.5em;
+      margin-left: 2.6em;
+      > *:not(:first-child) {
+        margin-left: 0.2em;
+      }
+      > * {
+        padding: 0.4em;
+        font-size: large;
+        border: none;
+        box-shadow: none;
+        height: fit-content;
+      }
+      #postCommentInside {
+        width: 100%;
+        margin: 0.85em 0 0.85em 0;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        //width: 125%;
+        #edit {
+          right: 0.5rem;
+          position: absolute;
+          top: 0.5rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #postCommentInside {
+          width: 110%;
+          #edit {
+            right: 0.5rem;
+            position: absolute;
+            top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .editing-comment {
+    .ant-comment,
+    .ant-comment-content-detail {
+      width: 100% !important;
+    }
+  }
+
+  .more-comments {
+    font-size: small;
+  }
+}

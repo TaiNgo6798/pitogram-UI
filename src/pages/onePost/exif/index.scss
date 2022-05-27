@@ -1,0 +1,51 @@
+.detail__exif{
+  display: flex;
+  padding: 1em 0 1em 0;
+  align-items: flex-start;
+  justify-content: space-around;
+
+
+  .detail__exif__up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+
+    > img{
+      height: 70px;
+      margin-right: 1em;
+    }
+     p {
+      margin-bottom: 0px;
+      word-wrap: break-word;
+    }
+
+  }
+
+  .detail__exif__down{
+    display: flex;
+    
+    .exif-item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5em;
+
+      >img{
+        height: 22px;
+        width: 22px;
+        margin-right: 1em;
+      }
+
+      p{
+        margin: 0;
+      }
+    }
+
+    .detail__exif__right_col-left{
+
+    }
+    .detail__exif__right_col-right{
+      
+    }
+  }
+}

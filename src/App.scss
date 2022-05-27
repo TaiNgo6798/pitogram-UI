@@ -1,0 +1,64 @@
+
+@media only screen and (min-width: 1024px){
+  .pages{
+    .wrapper{
+      padding-top: 5em !important;
+    }
+  }
+}
+
+
+.pages {
+  .wrapper {
+    //height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 0em;
+
+  }
+  
+}
+.circle-icon{
+  border-radius: 50%;
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(156, 156, 156, 0.219) !important;
+  }
+}
+
+.hover-color{
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(156, 156, 156, 0.219) !important;
+  }
+}
+.drop-shadow{
+  box-shadow: 0 5px 15px rgba(0,0,0,.08) !important;
+}
+
+.primary-bg-color{
+  background-color: rgb(255,32,121) !important;
+  color: #ffffff !important;
+}
+
+.primary-color{
+  color: rgb(255,32,121);
+}
+
+.border-radius {
+  border-radius: 16px !important;
+}
+
+.custom-scroll-bar {
+  &::-webkit-scrollbar{
+    width: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb
+  {
+    border-radius: 20px;
+    background-color: rgb(160, 160, 160);
+  }
+}

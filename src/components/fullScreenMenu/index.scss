@@ -1,0 +1,43 @@
+.full-screen-menu {
+  transition: all 0.2s;
+
+  position: fixed;
+  bottom: -60vh;
+  left: 0;
+  z-index: 9;
+
+  width: 100vw;
+  height: 60vh;
+
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  .full-screen-menu_close-btn {
+    width: fit-content;
+    margin: 0.5em 0.8em 1em auto;
+    font-size: x-large;
+  }
+}
+
+.show-full-menu {
+  transform: translateY(-60vh);
+  .ant-menu-item {
+    height: fit-content !important;
+    margin-bottom: 1em !important;
+  }
+  * {
+    font-size: small;
+    line-height: 20px;
+  }
+
+  ul {
+    height: 100%;
+  }
+}
+
+.hide-full-menu {
+}

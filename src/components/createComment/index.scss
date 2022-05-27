@@ -1,0 +1,39 @@
+.postComment{
+  width: 100%;
+  margin: 0.85em 0 0.85em 0;
+  display: flex;
+  align-items: center;
+  :first-child{
+    min-width: 30px;
+  }
+  > textarea{
+    overflow: hidden;
+    max-width: 92%;
+
+    margin-left: 0.5em;
+    
+    border: none;
+    border-radius: 20px;
+    
+    resize: none;
+    background-color: #f1f1f1;
+    &:focus {
+      box-shadow: none;
+    }
+    
+  }
+  #emoji:hover{
+    transition: all 0.35s ease-in-out 0s;
+    color: yellowgreen;
+    font-size: medium;
+  }
+}
+.emoji-mart{
+    width: 355px;
+    position: absolute;
+    z-index: 15;
+    margin-left: 5rem;
+}
+.emoji-mart-preview{
+  display: none ;
+}

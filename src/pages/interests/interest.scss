@@ -1,0 +1,26 @@
+.interest-modal{
+    
+    #interest-list{
+        justify-self: start;
+        width: 100%;
+        border-radius: 5px;
+        
+        
+    }
+    .interest-tag{
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px;
+
+        padding: 1em;
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .tag-list{
+        height: 300px;
+        overflow-y: auto;
+    }
+}
+

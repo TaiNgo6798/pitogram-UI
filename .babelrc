@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    // ["transform-remove-console", { "exclude": [ "error", "warn"] }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "./src/page/",
+        "rootPathPrefix": "~/"
+      }
+    ],
+    "react-hot-loader/babel"
+  ]
+}

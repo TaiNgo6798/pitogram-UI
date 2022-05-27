@@ -1,0 +1,63 @@
+@media only screen and (min-width: 992px) {
+  
+}
+
+.react-button{
+  border: none;
+  box-shadow: none;
+  background: transparent !important;
+  padding: unset;
+  height: fit-content;
+
+  &:hover{
+    cursor: pointer;
+  }
+  .default-icon{
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    .icon_reacted{
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.emoji_list{
+  padding: 0.5em;
+  border-radius: 30px;
+  box-shadow: 6px 3px 20px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+
+  width: fit-content;
+
+  * {
+    transition: all 0.2s;
+    margin-right: 8px;
+    //margin-bottom: 14px ;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  :last-child{
+    margin: 0;
+  }
+  .ant-popover-inner{
+    border-radius: 35px;
+    .ant-popover-inner-content{
+      padding: 0.5em;
+    }
+  }
+}
+
+.icon_reaction {
+  font-size: x-large;
+  height: 1.5em;
+  width: 1.5em;
+  &:hover {
+    cursor: pointer;
+  }
+}

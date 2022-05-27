@@ -1,0 +1,25 @@
+ul {
+  max-height: 90vh;
+  overflow-y: auto;
+
+  .noti-item {
+    min-width: 380px;
+    max-width: 380px;
+    
+    height: auto !important;
+    display: flex;
+    white-space: normal;
+
+    > .noti_text {
+      display: flex;
+      flex-direction: column;
+      max-width: 260px;
+      > p {
+        margin: 5px 0 0 10px;
+      }
+      > :last-child {
+        opacity: 0.6;
+      }
+    }
+  }
+}

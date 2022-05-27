@@ -1,0 +1,56 @@
+.post__footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+
+  padding: 12px 12px;
+
+  > :first-child {
+    margin-left: 0 !important;
+  }
+
+  > :last-child {
+    margin-right: 0 !important;
+  }
+
+  .commentsCount {
+    > a {
+      color: white !important;
+    }
+
+  }
+
+  .likeCount {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > :last-child {
+      font-size: medium;
+      margin-left: 0.75em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    > .icon_reaction {
+      font-size: x-large;
+      margin-right: -0.25em;
+      height: 0.8em;
+      width: 0.8em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.who_like_item {
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

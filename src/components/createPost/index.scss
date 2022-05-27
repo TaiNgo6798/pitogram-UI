@@ -1,0 +1,139 @@
+@media only screen and (min-width: 1024px){
+  .posting-modal {
+
+
+  .create-post__footer__buttons {
+    width: fit-content !important;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    > * {
+      margin: 0 2px !important;
+    }
+  }}
+}
+
+.posting-modal{
+  width: 95% !important;
+  max-width: 1200px;
+  max-height: 800px;
+  padding: 0;
+
+  .ant-modal-body{
+    height: 70vh;
+    overflow-y: scroll;
+    
+    .ant-upload.ant-upload-drag{
+      height: fit-content;
+    }
+
+    .uploaded-zone {
+      display: flex;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      flex-wrap: wrap;
+
+      .image-card {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 6px;
+        position: relative;
+
+        .detect-button{
+          position: sticky;
+          user-select: none;
+        }
+
+        .delete-button{
+          transition: all 0.1s;
+          z-index: 100;
+          position: absolute;
+          top: 0.5em;
+          right: 0.5em;
+          font-size: large;
+          user-select: none;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 50%;
+          padding: 0.4em;
+
+          &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+
+        .img-container{
+          overflow: hidden;
+          .image-card_img {
+            width: 300px;
+            height: 375px;
+            object-fit: cover;
+            border: 1px solid rgb(217,217,217);
+          }
+          .adult_logo{
+            position: absolute;
+            z-index: 99;
+          }
+          .adult-warning{
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+          }
+        }
+
+
+        .image-card_description {
+          width: 100%;
+        }
+  
+        .image-card_tags {
+          width: 300px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          border-left: 1px solid rgb(217,217,217);
+          border-right: 1px solid rgb(217,217,217);
+
+          padding: 0.5em;
+
+          > * {
+            margin-bottom: 4px;
+          }
+
+          .site-tag-plus {
+            background: #fff;
+            border-style: dashed;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .ant-modal-footer{
+    .create-post__footer{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .create-post__footer__progress{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1em;
+      }
+
+      .create-post__footer__buttons {
+        width: 100%;
+        > * {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}

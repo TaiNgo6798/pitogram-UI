@@ -1,0 +1,9 @@
+.img_row{
+  &:hover{
+    cursor: pointer;
+  }
+  width: 4em;
+  height: 4em;
+  object-fit: cover;
+  border-radius: 50%;
+}

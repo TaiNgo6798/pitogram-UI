@@ -1,0 +1,148 @@
+.minimize {
+  height: 57px !important;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    .container-nav {
+      justify-content: unset !important;
+    }
+    top: 0;
+    bottom: unset !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+
+    .logo{
+      margin: 0 0.5em;
+    }
+  }
+}
+
+
+
+.nav {
+  transition: all 0.2s;
+  z-index: 9;
+  position: fixed;
+  bottom: 0.5em;
+  height: 55px;
+  width: 60vw;
+  min-width: 320px;
+
+  border-radius: 30px;
+
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 0 !important;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+
+  padding: 0 0.5em;
+
+  .container-nav {
+    border-radius: inherit;
+    padding: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+
+    .logo {
+      content: url('../../assets/images/logo.png');
+      height: 50px;
+      max-width: 200px;
+      padding: 10px 15px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .logo_mobile {
+      content: url('../../assets/icons/logo.png');
+      height: 100%;
+      max-width: 200px;
+      padding: 10px 15px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .show-search-bar {
+      opacity: 1 !important;
+      transform: translateY(-150%);
+    }
+
+    .search-bar-toggle{
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .searchBar {
+      transition: all 0.2s;
+      height: 65%;
+      width: 100%;
+
+       * {
+        border-radius: 30px;
+        border: none;
+        >.ant-input-suffix {
+          border-radius: 50%;
+          *{
+            border-radius: 50%;
+          }
+        }
+      }
+      * {
+        display: flex;
+        align-items: center;
+        background-color: rgb(248,248,248);
+        height: 100%;
+        
+      }
+
+      .ant-input-group-addon{
+        display: none;
+      }
+
+    }
+
+    .search-icon{
+      padding: 0.5em;
+    }
+
+    .direct-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5em;
+      margin: 0 0.4em;
+
+      > * {
+        font-size: 1.3em;
+      }
+    }
+
+    .login-button{
+      display: none;
+      font-size: small;
+      min-width: 6em;
+      margin-left: auto;
+    }
+  }
+  a {
+    color: inherit;
+  }
+
+}
+
+
